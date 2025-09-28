@@ -18,7 +18,7 @@ function createCommandChoices() {
 }
 
 // Simple test command
-const TEST_COMMAND = {
+const PAPACERRO_COMMAND = {
   name: 'papacerro',
   description: 'Basic command',
   type: 1,
@@ -46,6 +46,6 @@ const CHALLENGE_COMMAND = {
 
 console.log('Retolam')
 
-const ALL_COMMANDS = [TEST_COMMAND, CHALLENGE_COMMAND];
+const ALL_COMMANDS = [PAPACERRO_COMMAND, CHALLENGE_COMMAND];
 
 InstallGlobalCommands(process.env.APP_ID, ALL_COMMANDS);
