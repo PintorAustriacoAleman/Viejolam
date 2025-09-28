@@ -29,6 +29,8 @@ app.post('/interactions', verifyKeyMiddleware(process.env.PUBLIC_KEY), async fun
   /**
    * Handle verification requests
    */
+
+  console.log(req.body)
   if (type === InteractionType.PING) {
     console.log('Todos murieron');
     return res.send({ type: InteractionResponseType.PONG });
