@@ -19,7 +19,7 @@ function createCommandChoices() {
 
 // Simple test command
 const TEST_COMMAND = {
-  name: 'test',
+  name: 'Papa_Cerro',
   description: 'Basic command',
   type: 1,
   integration_types: [0, 1],
