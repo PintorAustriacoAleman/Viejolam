@@ -43,7 +43,7 @@ app.post('/interactions', verifyKeyMiddleware(process.env.PUBLIC_KEY), async fun
 
     // "test" command
     console.log(name)
-    if (name === 'Papa_Cerro') {
+    if (name === 'papacerro') {
       // Send a message into the channel where command was triggered from
       return res.send({
         type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
