@@ -30,6 +30,7 @@ app.post('/interactions', verifyKeyMiddleware(process.env.PUBLIC_KEY), async fun
    * Handle verification requests
    */
   if (type === InteractionType.PING) {
+    console.log('Todos murieron');
     return res.send({ type: InteractionResponseType.PONG });
   }
 
@@ -41,6 +42,7 @@ app.post('/interactions', verifyKeyMiddleware(process.env.PUBLIC_KEY), async fun
     const { name } = data;
 
     // "test" command
+    console.log(name)
     if (name === 'Papa_Cerro') {
       // Send a message into the channel where command was triggered from
       return res.send({
